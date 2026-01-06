@@ -1,0 +1,142 @@
+##grflangid 0x01
+
+STR_GRF_NAME           :U&ReRMM 3
+STR_GRF_DESCRIPTION    :Railway (from slowest to fastest), metro line, narrow-gauge line, monorail and maglev with new graphics(with zoom in x1 and x2){}{}{BLACK}Requires version {SILVER}15.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby{}{BLACK}License: {SILVER}CC-BY-NC-SA 3.0{}
+STR_GRF_URL            :
+
+STR_OPENTTD_VERSION                     :15.0
+STR_ERROR_URERMM                        :Simultaneous use with U&ReRMM is prohibited. Only choose one of them.
+
+STR_PARAM_GUI_NAME                      :GUI
+STR_PARAM_GUI_DESC                      :Displays the corresponding graphical icons and cursors in the OpenTTD style.
+STR_PARAM_GUI_0                         :TTD
+STR_PARAM_GUI_1                         :OpenGFX
+STR_PARAM_GUI_2                         :OpenGFX 2
+STR_PARAM_GUI_3                         :U&GUI
+
+STR_PARAM_RAILTYPE_SELECTION_NAME       :Railtype selection
+STR_PARAM_RAILTYPE_SELECTION_DESC       :This option allows you to select the number of available railway types.
+STR_PARAM_RAILTYPE_SELECTION_MINIMAL    :Minimal
+STR_PARAM_RAILTYPE_SELECTION_REDUCED    :Reduced
+STR_PARAM_RAILTYPE_SELECTION_FULL       :Full
+
+STR_PARAM_FENCES_NAME                   :Fences
+STR_PARAM_FENCES_DESC                   :Replaces or deactivates the default fences for railways.
+STR_PARAM_FENCES_0                      :None
+STR_PARAM_FENCES_1                      :Original
+STR_PARAM_FENCES_2                      :Default
+STR_PARAM_FENCES_3                      :All railtypes
+STR_PARAM_FENCES_4                      :Color company
+
+STR_PARAM_METRO_RAILWAY_NAME            :Allow other train on metro railways
+STR_PARAM_METRO_RAILWAY_DESC            :Select what other train types (by railtype) to allow on metro railways. Trains will only be powered if a compatible power source is available on the metro railway of choice. This feature only works correctly for default and supported railway sets.
+STR_PARAM_METRO_RAILWAY_0               :Off (Default)
+STR_PARAM_METRO_RAILWAY_1               :Unelectrified rail only
+STR_PARAM_METRO_RAILWAY_2               :Electrified rail only
+STR_PARAM_METRO_RAILWAY_3               :Both options
+
+STR_PARAM_DUAL_RAILWAY_NAME             :Dual gauge railway
+STR_PARAM_DUAL_RAILWAY_DESC             :Select this option to enable dual gauge (normal+narrow) track. This function only works correctly for narrow-gauge and supported railway sets
+
+STR_BUILD_CAPTION_RAIL                  :New railway vehicles
+STR_AUTOREPLACE_RAIL                    :Railway vehicles
+STR_NEW_ENGINE_RAIL                     :Railway vehicle
+
+STR_BUILD_CAPTION_METRO                 :New metro railway vehicles
+STR_AUTOREPLACE_METRO                   :Metro railway vehicles
+STR_NEW_ENGINE_METRO                    :Metro railway vehicle
+
+STR_BUILD_CAPTION_NGRL                  :New narrow gauge railway vehicles
+STR_AUTOREPLACE_NGRL                    :Narrow gauge railway vehicles
+STR_NEW_ENGINE_NGRL                     :Narrow gauge railway vehicle
+
+STR_NAME_SA_N                           :Overgrown railway
+STR_TOOLBAR_SA_N                        :Overgrown railway
+STR_MENU_SA_N                           :Overgrown railway
+
+STR_NAME_SAAN                           :Railway
+STR_TOOLBAR_SAAN                        :Railway
+STR_MENU_SAAN                           :Railway
+
+STR_NAME_SAAE                           :Railway {LTBLUE}(electrified)
+STR_TOOLBAR_SAAE                        :Railway {LTBLUE}(electrified)
+STR_MENU_SAAE                           :Railway {LTBLUE}(electrified)
+
+STR_NAME_SBAN                           :Railway (level 1)
+STR_TOOLBAR_SBAN                        :Railway (level 1)
+STR_MENU_SBAN                           :Railway (level 1)
+
+STR_NAME_SBAE                           :Railway (level 1) {LTBLUE}(electrified)
+STR_TOOLBAR_SBAE                        :Railway (level 1) {LTBLUE}(electrified)
+STR_MENU_SBAE                           :Railway (level 1) {LTBLUE}(electrified)
+
+STR_NAME_SCAN                           :Railway (level 2)
+STR_TOOLBAR_SCAN                        :Railway (level 2)
+STR_MENU_SCAN                           :Railway (level 2)
+
+STR_NAME_SCAE                           :Railway (level 2) {LTBLUE}(electrified)
+STR_TOOLBAR_SCAE                        :Railway (level 2) {LTBLUE}(electrified)
+STR_MENU_SCAE                           :Railway (level 2) {LTBLUE}(electrified)
+
+STR_NAME_SDAN	                        :High speed railway {LTBLUE}(electrified)
+STR_TOOLBAR_SDAN                        :High speed railway {LTBLUE}(electrified)
+STR_MENU_SDAN	                        :High speed railway {LTBLUE}(electrified)
+
+STR_NAME_SAA3                           :Metro railway {GREEN}(third rail)
+STR_TOOLBAR_SAA3                        :Metro railway {GREEN}(third rail)
+STR_MENU_SAA3                           :Metro railway {GREEN}(third rail)
+
+STR_NAME_SAAZ                           :Metro railway {GREEN}(third rail) {LTBLUE}(electrified)
+STR_TOOLBAR_SAAZ                        :Metro railway {GREEN}(third rail) {LTBLUE}(electrified)
+STR_MENU_SAAZ                           :Metro railway {GREEN}(third rail) {LTBLUE}(electrified)
+
+STR_NAME_dAAN                           :Dual gauge railway
+STR_TOOLBAR_dAAN                        :Dual gauge railway
+STR_MENU_dAAN                           :Dual gauge railway
+
+STR_NAME_dBAE                           :Dual gauge railway {LTBLUE}(electrified)
+STR_TOOLBAR_dBAE                        :Dual gauge railway {LTBLUE}(electrified)
+STR_MENU_dBAE                           :Dual gauge railway {LTBLUE}(electrified)
+
+STR_NAME_NA_N                           :Overgrown narrow gauge railway
+STR_TOOLBAR_NA_N                        :Overgrown narrow gauge railway
+STR_MENU_NA_N                           :Overgrown narrow gauge railway
+
+STR_NAME_NAAN                           :Narrow gauge railway
+STR_TOOLBAR_NAAN                        :Narrow gauge railway
+STR_MENU_NAAN                           :Narrow gauge railway
+
+STR_NAME_NAAE                           :Narrow gauge railway {LTBLUE}(electrified)
+STR_TOOLBAR_NAAE                        :Narrow gauge railway {LTBLUE}(electrified)
+STR_MENU_NAAE                           :Narrow gauge railway {LTBLUE}(electrified)
+
+STR_NAME_NBAN                           :Narrow gauge railway (level 1)
+STR_TOOLBAR_NBAN                        :Narrow gauge railway (level 1)
+STR_MENU_NBAN                           :Narrow gauge railway (level 1)
+
+STR_NAME_NBAE                           :Narrow gauge railway (level 1) {LTBLUE}(electrified)
+STR_TOOLBAR_NBAE                        :Narrow gauge railway (level 1) {LTBLUE}(electrified)
+STR_MENU_NBAE                           :Narrow gauge railway (level 1) {LTBLUE}(electrified)
+
+STR_NAME_NAA3                           :Narrow gauge railway {GREEN}(third rail)
+STR_TOOLBAR_NAA3                        :Narrow gauge railway {GREEN}(third rail)
+STR_MENU_NAA3                           :Narrow gauge railway {GREEN}(third rail)
+
+STR_NAME_MONO	                        :Monorail
+STR_TOOLBAR_MONO                        :Monorail
+STR_MENU_MONO	                        :Monorail
+
+STR_NAME_MGLV	                        :Maglev
+STR_TOOLBAR_MGLV                        :Maglev
+STR_MENU_MGLV	                        :Maglev
+
+STR_PATH_SIGNAL_NAME                    :Enable custom path signal
+STR_PATH_SIGNAL_DESC                    :Replaces only path signal and one-way path signal
+
+STR_POWER                               :power
+STR_POWER_ELECTRIFIED                   :electrified
+STR_POWER_THIRD_RAIL                    :third rail
+STR_POWER_ELECTRIFIED_THIRD_RAIL        :electrified and third rail
+
+STR_STRING_NAME                         :{PUSH_COLOUR}{STRING}{POP_COLOUR}
+STR_STRING_MENU                         :{PUSH_COLOUR}{STRING}{POP_COLOUR}{PUSH_COLOUR}{WHITE}

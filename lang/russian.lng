@@ -1,0 +1,127 @@
+##grflangid 0x07
+
+STR_GRF_DESCRIPTION      :Новые железнодорожные пути (от самых медленных до самых быстрых), линия метрополитена, узкоколейная линия, монорельсы и маглев с новой графикой(с увеличением масштаба x1 и x2):{}{YELLOW}U&ReRMM 3{}{}{BLACK}Требуемая версия: {SILVER}15.0 {BLACK}и позднее{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby{}{BLACK}License: {SILVER}CC-BY-NC-SA 3.0{}
+
+STR_ERROR_URERMM                         :Одновременное использование с другими U&ReRMM запрещено. Выбирайте только один из них.
+
+STR_PARAM_GUI_NAME                       :Интерфейс
+STR_PARAM_GUI_DESC                       :Отображает соответствующие графические значки и курсоры в стиле OpenTTD.
+
+STR_PARAM_RAILTYPE_SELECTION_NAME        :Выбор железнодорожные типы
+STR_PARAM_RAILTYPE_SELECTION_DESC        :Эта опция позволяет вам выбрать количество доступных типов железных дорог.
+STR_PARAM_RAILTYPE_SELECTION_MINIMAL     :Минимальные
+STR_PARAM_RAILTYPE_SELECTION_REDUCED     :Сокращенные
+STR_PARAM_RAILTYPE_SELECTION_FULL        :Полные
+
+STR_PARAM_FENCES_NAME                    :Ограждение
+STR_PARAM_FENCES_DESC                    :Заменяет или деактивирует стандартные ограждения для железнодорожных путей.
+STR_PARAM_FENCES_0                       :Отсутствует
+STR_PARAM_FENCES_1                       :Оригинал
+STR_PARAM_FENCES_2                       :По умолчанию
+STR_PARAM_FENCES_3                       :Всё типы ж/д
+STR_PARAM_FENCES_4                       :Всё типы ж/д с цветной компанией
+
+STR_PARAM_METRO_RAILWAY_NAME             :Разрешить другим поездам движение по путям метро
+STR_PARAM_METRO_RAILWAY_DESC             :Выберите, какие другие типы поездов (по типу рельсов) разрешать на путях метро. Поезда будут питаться только в том случае, если на выбранном пути метро имеется совместимый источник питания. Эта функция корректно работает только для стандартных и поддерживаемых железнодорожных наборов.
+STR_PARAM_METRO_RAILWAY_0                :Выключено (По умолчанию)
+STR_PARAM_METRO_RAILWAY_1                :Только неэлектрифицированный ж/д
+STR_PARAM_METRO_RAILWAY_2                :Только электрифицированный ж/д
+STR_PARAM_METRO_RAILWAY_3                :Оба варианта
+
+STR_PARAM_DUAL_RAILWAY_NAME              :Совмещённая колея
+STR_PARAM_DUAL_RAILWAY_DESC              :Выберите этот параметр, чтобы включить колею с двойной колеей (обычная+узкоколейка). Эта функция корректно работает только для узкоколейных и поддерживаемых железнодорожных наборов.
+
+STR_BUILD_CAPTION_RAIL                   :Новые ж/д транспортные средства
+STR_AUTOREPLACE_RAIL                     :ж/д транспортные средства
+STR_NEW_ENGINE_RAIL                      :ж/д транспортные средства
+
+STR_BUILD_CAPTION_METRO                  :Новые ж/д транспортные средства метрополитена
+STR_AUTOREPLACE_METRO                    :ж/д транспортные средства метрополитена
+STR_NEW_ENGINE_METRO                     :ж/д транспортные средства метрополитена
+
+STR_BUILD_CAPTION_NGRL                   :Новые узкоколейные ж/д транспортные средства
+STR_AUTOREPLACE_NGRL                     :узкоколейные ж/д транспортные средства
+STR_NEW_ENGINE_NGRL	                     :узкоколейные ж/д транспортные средства
+
+STR_NAME_SA_N                            :Заросшая ж/д
+STR_TOOLBAR_SA_N                         :Заросшая ж/д
+STR_MENU_SA_N                            :Заросшая ж/д
+
+STR_NAME_SAAN                            :Железная дорога
+STR_TOOLBAR_SAAN                         :Железная дорога
+STR_MENU_SAAN                            :Железная дорога
+
+STR_NAME_SAAE                            :Железная дорога {LTBLUE}(контактный сеть)
+STR_TOOLBAR_SAAE                         :Железная дорога {LTBLUE}(контактный сеть)
+STR_MENU_SAAE                            :Железная дорога {LTBLUE}(контактный сеть)
+
+STR_NAME_SBAN                            :Автономная ж/д
+STR_TOOLBAR_SBAN                         :Автономная ж/д
+STR_MENU_SBAN                            :Автономная ж/д
+
+STR_NAME_SBAE                            :Автономная ж/д {LTBLUE}(контактный сеть)
+STR_TOOLBAR_SBAE                         :Автономная ж/д {LTBLUE}(контактный сеть)
+STR_MENU_SBAE                            :Автономная ж/д {LTBLUE}(контактный сеть)
+
+STR_NAME_SCAN                            :Магистральная ж/д
+STR_TOOLBAR_SCAN                         :Магистральная ж/д
+STR_MENU_SCAN                            :Магистральная ж/д
+
+STR_NAME_SCAE                            :Магистральная ж/д {LTBLUE}(контактный сеть)
+STR_TOOLBAR_SCAE                         :Магистральная ж/д {LTBLUE}(контактный сеть)
+STR_MENU_SCAE                            :Магистральная ж/д {LTBLUE}(контактный сеть)
+
+STR_NAME_SDAN		                     :Высокоскоростная ж/д {LTBLUE}(контактный сеть)
+STR_TOOLBAR_SDAN	                     :Высокоскоростная ж/д {LTBLUE}(контактный сеть)
+STR_MENU_SDAN		                     :Высокоскоростная ж/д {LTBLUE}(контактный сеть)
+
+STR_NAME_SAA3                            :Метрополитен {GREEN}(контактный рельс)
+STR_TOOLBAR_SAA3                         :Метрополитен {GREEN}(контактный рельс)
+STR_MENU_SAA3                            :Метрополитен {GREEN}(контактный рельс)
+
+STR_NAME_SAAZ                            :Метрополитен {GREEN}(контактный рельс) {LTBLUE}(контактный сеть)
+STR_TOOLBAR_SAAZ                         :Метрополитен {GREEN}(конт. рельс) {LTBLUE}(конт.сеть)
+STR_MENU_SAAZ                            :Метрополитен {GREEN}(контактный рельс) {LTBLUE}(контактный сеть)
+
+STR_NAME_dAAN                            :Совмещённая колея
+STR_TOOLBAR_dAAN                         :Совмещённая колея
+STR_MENU_dAAN                            :Совмещённая колея
+
+STR_NAME_dBAE                            :Совмещённая колея {LTBLUE}(контактный сеть)
+STR_TOOLBAR_dBAE                         :Совмещённая колея {LTBLUE}(контактный сеть)
+STR_MENU_dBAE                            :Совмещённая колея {LTBLUE}(контактный сеть)
+
+STR_NAME_NA_N                            :Заросшая узкоколейная ж/д
+STR_TOOLBAR_NA_N                         :Заросшая узкоколейная ж/д
+STR_MENU_NA_N                            :Заросшая узкоколейная ж/д
+
+STR_NAME_NAAN                            :Узкоколейная ж/д
+STR_TOOLBAR_NAAN                         :Узкоколейная ж/д
+STR_MENU_NAAN                            :Узкоколейная ж/д
+
+STR_NAME_NAAE                            :Узкоколейная ж/д {LTBLUE}(контактный сеть)
+STR_TOOLBAR_NAAE                         :Узкоколейная ж/д {LTBLUE}(контактный сеть)
+STR_MENU_NAAE                            :Узкоколейная ж/д {LTBLUE}(контактный сеть)
+
+STR_NAME_NBAN                            :Автономная узкоколейная ж/д
+STR_TOOLBAR_NBAN                         :Автономная узкоколейная ж/д
+STR_MENU_NBAN                            :Автономная узкоколейная ж/д
+
+STR_NAME_NBAE                            :Автономная узкоколейная ж/д {LTBLUE}(контактный сеть)
+STR_TOOLBAR_NBAE                         :Автономная узкоколейная ж/д {LTBLUE}(конт. сеть)
+STR_MENU_NBAE                            :Автономная узкоколейная ж/д {LTBLUE}(контактный сеть)
+
+STR_NAME_NAA3                            :Узкоколейная ж/д {GREEN}(контактный рельс)
+STR_TOOLBAR_NAA3                         :Узкоколейная ж/д {GREEN}(контактный рельс)
+STR_MENU_NAA3                            :Узкоколейная ж/д {GREEN}(контактный рельс)
+
+STR_NAME_MONO		                     :Монорельс
+STR_TOOLBAR_MONO	                     :Монорельс
+STR_MENU_MONO		                     :Монорельс
+
+STR_NAME_MGLV		                     :Маглев
+STR_TOOLBAR_MGLV	                     :Маглев
+STR_MENU_MGLV		                     :Маглев
+
+STR_PATH_SIGNAL_NAME                    :Включить пользовательские маршрутные светофоры
+STR_PATH_SIGNAL_DESC                    :Заменяет только маршрутные и одностороние маршрутные светофоры
