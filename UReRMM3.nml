@@ -105,7 +105,7 @@ badgetable {
  "purpose",
  "purpose/catenaty",
  "purpose/third_rail",
- "purpose/third_rail_and_catenary",
+ "purpose/third_rail_catenary",
  "ih_behaviour/lgv_capable"
 }
 roadtypetable {URD0, URD1, ERD2, ERD3}
@@ -12969,4 +12969,5 @@ if ((param_metro_ralway > 1) || (param_metro_ralway == 3)) {
  }
 //==================================================================================================================================
 //												END
+
 //==================================================================================================================================
