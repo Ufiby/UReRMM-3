@@ -102,10 +102,10 @@ if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(15, 0
  }
 
 badgetable {
- "power",
- "power/electrified",
- "power/third_rail",
- "power/electrified_third_rail",
+ "purpose",
+ "purpose/catenaty",
+ "purpose/third_rail",
+ "purpose/third_rail_and_catenary",
  "ih_behaviour/lgv_capable"
 }
 roadtypetable {URD0, URD1, ERD2, ERD3}
@@ -11832,67 +11832,67 @@ switch (FEAT_RAILTYPES, SELF, switch_path_signals_type, param_path_signals) {
 //==================================================================================================================================
 //												Badges spriteset
 //==================================================================================================================================
-spriteset(spriteset_switch_power_electrified,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [0, 21, 14, 14, 0, 0] }
-spriteset(spriteset_switch_power_electrified_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [0,  0, 20, 20, 0, 0] }
+spriteset(spriteset_purpose_catenary,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [0, 21, 14, 14, 0, 0] }
+spriteset(spriteset_purpose_catenary_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [0,  0, 20, 20, 0, 0] }
 
-spriteset(spriteset_switch_power_third_rail,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [15, 21, 14, 14, 0, 0] }
-spriteset(spriteset_switch_power_third_rail_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [21,  0, 20, 20, 0, 0] }
+spriteset(spriteset_purpose_third_rail,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [15, 21, 14, 14, 0, 0] }
+spriteset(spriteset_purpose_third_rail_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [21,  0, 20, 20, 0, 0] }
 
-spriteset(spriteset_switch_power_electrified_third_rail,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [30, 21, 14, 14, 0, 0] }
-spriteset(spriteset_switch_power_electrified_third_rail_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [42,  0, 20, 20, 0, 0] }
+spriteset(spriteset_purpose_third_rail_catenary,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [30, 21, 14, 14, 0, 0] }
+spriteset(spriteset_purpose_third_rail_catenary_ugui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/BADGES.png") { [42,  0, 20, 20, 0, 0] }
 
-switch(FEAT_BADGES, SELF, switch_power_electrified, (param[0] == 3)) {
- 0: spriteset_switch_power_electrified;
- 1: spriteset_switch_power_electrified_ugui;
+switch(FEAT_BADGES, SELF, switch_purpose_catenary, (param[0] == 3)) {
+ 0: spriteset_purpose_catenary;
+ 1: spriteset_purpose_catenary_ugui;
 }
 
-switch(FEAT_BADGES, SELF, switch_power_third_rail, (param[0] == 3)) {
- 0: spriteset_switch_power_third_rail;
- 1: spriteset_switch_power_third_rail_ugui;
+switch(FEAT_BADGES, SELF, switch_purpose_third_rail, (param[0] == 3)) {
+ 0: spriteset_purpose_third_rail;
+ 1: spriteset_purpose_third_rail_ugui;
 }
 
-switch(FEAT_BADGES, SELF, switch_power_electrified_third_rail, (param[0] == 3)) {
- 0: spriteset_switch_power_electrified_third_rail;
- 1: spriteset_switch_power_electrified_third_rail_ugui;
+switch(FEAT_BADGES, SELF, switch_purpose_third_rail_catenary, (param[0] == 3)) {
+ 0: spriteset_purpose_third_rail_catenary;
+ 1: spriteset_purpose_third_rail_catenary_ugui;
 }
 //==================================================================================================================================
 //												Badges Definitions
 //==================================================================================================================================
-item (FEAT_BADGES, power) {
+item (FEAT_BADGES, purpose) {
   property {
-   label:     "power";
+   label:     "purpose";
    flags:     bitmask();
-   name:      string(STR_POWER);
+   name:      string(STR_PURPOSE);
   }
 }
-item (FEAT_BADGES, power_electrified) {
+item (FEAT_BADGES, purpose_catenary) {
   property {
-   label:     "power/electrified";
+   label:     "purpose/catenaty";
    flags:     bitmask();
-   name:      string(STR_POWER_ELECTRIFIED);
+   name:      string(STR_PURPOSE_CATENARY);
   }
  graphics {
-   default:   switch_power_electrified;
+   default:   switch_purpose_catenary;
   }
 }
-item (FEAT_BADGES, power_third_rail) {
+item (FEAT_BADGES, purpose_third_rail) {
   property {
-   label:     "power/third_rail";
+   label:     "purpose/third_rail";
    flags:     bitmask();
-   name:      string(STR_POWER_THIRD_RAIL);
+   name:      string(STR_PURPOSE_THIRD_RAIL);
   }
  graphics {
-   default:   switch_power_third_rail;
+   default:   switch_purpose_third_rail;
   }
 }
-item (FEAT_BADGES, power_electrified_third_rail) {
+item (FEAT_BADGES, purpose_third_rail_catenary) {
   property {
-   label:     "power/electrified_third_rail";
+   label:     "purpose/third_rail_catenary";
    flags:     bitmask();
-   name:      string(STR_POWER_ELECTRIFIED_THIRD_RAIL);
+   name:      string(STR_PURPOSE_THIRD_RAIL_CATENARY);
   }
  graphics {
-   default:   switch_power_electrified_third_rail;
+   default:   switch_purpose_third_rail_catenary;
   }
 }
 
@@ -11939,11 +11939,13 @@ if (railtype_available("SRL0") || loading_stage == LOADING_STAGE_RESERVE) {
 if ((param_metro_ralway == 1) || (param_metro_ralway == 3)) {
   property {
    powered_railtype_list:          ["SAA3"];
+   compatible_railtype_list:       ["SAA3"];
    }
   }
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12001,11 +12003,13 @@ if (railtype_selection > 1) {
 if ((param_metro_ralway == 1) || (param_metro_ralway == 3)) {
   property {
    powered_railtype_list:          ["SAA3"];
+   compatible_railtype_list:       ["SAA3"];
    }
   }
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12058,11 +12062,13 @@ if (railtype_available("SRL1") || loading_stage == LOADING_STAGE_RESERVE) {
 if ((param_metro_ralway == 1) || (param_metro_ralway == 3)) {
   property {
    powered_railtype_list:          ["SAA3"];
+   compatible_railtype_list:       ["SAA3"];
    }
   }
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12117,11 +12123,13 @@ if (railtype_available("SRL2") || loading_stage == LOADING_STAGE_RESERVE) {
 if ((param_metro_ralway == 1) || (param_metro_ralway == 3)) {
   property {
    powered_railtype_list:          ["SAA3"];
+   compatible_railtype_list:       ["SAA3"];
    }
   }
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12168,7 +12176,7 @@ if (param_metro_ralway > 1) {
                                     "SAAa", "SABa", "SACa", "SADa", "SAEa",
                                     "LGVE"];                                                                //Horse railtype
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified"];
+   badges:                         ["purpose/catenaty"];
    speed_limit:                    (railtype_selection < 2) ? 0 : 141 km/h;
 //   curve_speed_multiplier:         1;
    construction_cost:              28;
@@ -12179,6 +12187,7 @@ if (param_metro_ralway > 1) {
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
 if (railtype_selection == 0) {
@@ -12227,7 +12236,7 @@ if (railtype_available("SEL1") || loading_stage == LOADING_STAGE_RESERVE) {
 //   alternative_railtype_list:
    requires_railtype_list:         ["ELRL"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified"];
+   badges:                         ["purpose/catenaty"];
    introduction_date:              date(1930,01,01);
    speed_limit:                    (railtype_selection < 2) ? 0 : 261 km/h;
 //   curve_speed_multiplier:         1;
@@ -12239,6 +12248,7 @@ if (railtype_available("SEL1") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
 if (railtype_selection == 1) {
@@ -12289,7 +12299,7 @@ if (railtype_available("SEL2") || loading_stage == LOADING_STAGE_RESERVE) {
 //   alternative_railtype_list:
    requires_railtype_list:         ["ELRL"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified", "ih_behaviour/lgv_capable"];
+   badges:                         ["purpose/catenaty", "ih_behaviour/lgv_capable"];
    introduction_date:              date(1970,01,01);
    speed_limit:                    380 km/h;
 //   curve_speed_multiplier:         1;
@@ -12301,6 +12311,7 @@ if (railtype_available("SEL2") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12347,7 +12358,7 @@ if (railtype_available("SEL3") || loading_stage == LOADING_STAGE_RESERVE) {
 //   alternative_railtype_list:
    requires_railtype_list:         ["ELRL"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-   badges:                         ["power/electrified", "ih_behaviour/lgv_capable"];
+   badges:                         ["purpose/catenaty", "ih_behaviour/lgv_capable"];
    introduction_date:              date(2010,01,01);
 //   speed_limit:                    0 km/h;
 //   curve_speed_multiplier:         1;
@@ -12359,6 +12370,7 @@ if (railtype_available("SEL3") || loading_stage == LOADING_STAGE_RESERVE) {
 if (param_metro_ralway > 1) {
   property {
    powered_railtype_list:          ["SAAZ"];
+   compatible_railtype_list:       ["SAAZ"];
    }
   }
   graphics {
@@ -12399,7 +12411,7 @@ if (railtype_available("SAA3") || loading_stage == LOADING_STAGE_RESERVE) {
    alternative_railtype_list:      ["3RDR", "MTRO", "METR",
                                     "SBA3", "SAB3", "SBB3"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-   badges:                         ["power/third_rail"];
+   badges:                         ["purpose/third_rail"];
 //   introduction_date:
    speed_limit:                    (railtype_selection < 2) ? 0 : 141 km/h;
 //   curve_speed_multiplier:         1;
@@ -12450,7 +12462,7 @@ if (railtype_available("SAAZ") || loading_stage == LOADING_STAGE_RESERVE) {
 //   alternative_railtype_list:
    requires_railtype_list:         ["SAA3", "ELRL"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-   badges:                         ["power/electrified_third_rail"];
+   badges:                         ["purpose/third_rail_and_catenary"];
    introduction_date:              date(1870,01,01);
    speed_limit:                    (railtype_selection < 2) ? 0 : 141 km/h;
 //   curve_speed_multiplier:         1;
@@ -12547,7 +12559,7 @@ if (railtype_available("dBAE") || loading_stage == LOADING_STAGE_RESERVE) {
    powered_railtype_list:          ["dBAE"];
    requires_railtype_list:         ["ELRL", "NAAE"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified"];
+   badges:                         ["purpose/catenaty"];
    introduction_date:              date(1930,01,01);
    speed_limit:                    (railtype_selection < 2) ? 0 : 161 km/h;
 //   curve_speed_multiplier:         1;
@@ -12753,7 +12765,7 @@ if (railtype_available("NAAE") || loading_stage == LOADING_STAGE_RESERVE) {
                                     "NAAE", "NBAE", "NCAE", "NDAE", "NEAE",
                                             "NABE", "NACE", "NADE", "NAEE"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified"];
+   badges:                         ["purpose/catenaty"];
    speed_limit:                    (railtype_selection < 2) ? 0 : 141 km/h;
 //   curve_speed_multiplier:         1;
    construction_cost:              25;
@@ -12800,7 +12812,7 @@ if (railtype_available("NEL1") || loading_stage == LOADING_STAGE_RESERVE) {
 //   alternative_railtype_list:
    requires_railtype_list:         ["NAAE"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_CATENARY);
-   badges:                         ["power/electrified"];
+   badges:                         ["purpose/catenaty"];
    introduction_date:              date(1930,01,01);
    speed_limit:                    (railtype_selection < 2) ? 0 : 200 km/h;
 //   curve_speed_multiplier:         1;
@@ -12846,7 +12858,7 @@ if (railtype_available("NAA3") || loading_stage == LOADING_STAGE_RESERVE) {
    powered_railtype_list:          ["NAA3"];
    alternative_railtype_list:      ["NBA3", "NAB3", "NBB3"];
    railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED, RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-   badges:                         ["power/third_rail"];
+   badges:                         ["purpose/third_rail"];
 //   introduction_date:
    speed_limit:                    (railtype_selection < 2) ? 0 : 121 km/h;
 //   curve_speed_multiplier:         1;
